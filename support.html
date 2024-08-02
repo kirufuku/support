@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせフォーム</title>
+    <title>コーデのお問い合わせフォーム</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,7 +62,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>お問い合わせ</h1>
+        <h1>コーデ - お問い合わせ</h1>
+        <p>コーデアプリに関するご質問は下記フォームよりお問い合わせください。</p>
         <form id="contactForm">
             <label for="name">お名前:</label>
             <input type="text" id="name" name="name" required>
@@ -87,7 +88,7 @@
             const message = document.getElementById('message').value;
 
             // メールのリンクを生成
-            const mailtoLink = `mailto:your-email@example.com?subject=お問い合わせ&body=お名前: ${encodeURIComponent(name)}%0Aメールアドレス: ${encodeURIComponent(email)}%0Aメッセージ: ${encodeURIComponent(message)}`;
+            const mailtoLink = `mailto:kawatyanlife@gmail.com?subject=お問い合わせ&body=お名前: ${encodeURIComponent(name)}%0Aメールアドレス: ${encodeURIComponent(email)}%0Aメッセージ: ${encodeURIComponent(message)}`;
 
             // メーラーを開く
             window.location.href = mailtoLink;
